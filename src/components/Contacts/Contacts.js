@@ -1,9 +1,10 @@
 import React from 'react';
+import { List } from './Contacts.styled';
 
 
 export const Contacts = ({ contacts, onRemoveContact }) => {
     return(
-     <ul>{contacts.map(contact => (
+     <List>{contacts.map(contact => (
         <li key={contact.id}>
           {contact.name + ' : ' + contact.number}
           {
@@ -17,6 +18,6 @@ export const Contacts = ({ contacts, onRemoveContact }) => {
           }
         </li>
       ))}
-    </ul>
+    </List>
   );}
 
